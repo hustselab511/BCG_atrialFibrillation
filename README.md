@@ -3,10 +3,9 @@
 FabosNet model is used for Ballistocardiogram signal detection of atrial fibrillation.
 
 ## Advantages
-- BCG signal separation and identity recognition based on deep learning technology
-- High accuracy separation and identification performance
-- Supports data collected by multiple devices
-- Effective against low quality signals
+- By converting the original BCG signal into its wavelet transform temporal-spectrogram using the Morlet wavelet transform, we can enhance the local information density and effectively extract critical imaging features.
+- We present a novel model that integrates atrial fibrillation (AF)-specific characteristics from different frequency bands and time domains, allowing for effective differentiation between atrial fibrillation and sporadic arrhythmias.
+- The proposed FabosNet is highly adaptable to various sampling lengths, achieving an accuracy of 95.26% on signal segments as short as 5 seconds.  This offers a promising solution for early AF screening in real-world applications.
 
 ## Environment
 Before you can start using the MuSFId model, you need to install the following dependencies:
