@@ -39,7 +39,7 @@ def produceLabel(data, labelVal):
 def transferAllDataToCWT(signals, scale=512, wavelet='morl', fs=125, ylim=[0, 20], imageSize=224):
     # 利用JIT加速numpy计算过程
     images = [transferCWT(signal.squeeze(0).numpy(), scale, wavelet,
-                          fs, ylim, imageSize) for signal in tqdm(signals, '提取频谱图')]
+                          fs, ylim, imageSize) for signal in tqdm(signals, 'GET CWT Image')]
     images_arrays = np.stack(images)
     result = torch.tensor(images_arrays)
     return result
